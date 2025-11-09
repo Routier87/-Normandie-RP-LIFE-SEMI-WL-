@@ -110,6 +110,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .btn, .btn-discord {
@@ -145,7 +146,7 @@ header {
 
 /* ===== PAGE REGLEMENT ===== */
 main.rules {
-  padding: 140px 10% 50px; /* espace sous le header fixe */
+  padding: 140px 10% 50px;
   max-width: 900px;
   margin: auto;
   color: #eee;
@@ -200,7 +201,6 @@ main.rules {
   background: rgba(244, 197, 66, 0.1);
 }
 
-/* SIGNATURE */
 .signature-box {
   background: rgba(0, 0, 0, 0.25);
   border: 1px dashed #f4c542;
@@ -216,7 +216,6 @@ main.rules {
   box-shadow: 0 0 12px rgba(244, 197, 66, 0.3);
 }
 
-/* DISCORD */
 .rules .discord-link {
   margin-top: 35px;
   text-align: center;
@@ -259,6 +258,6 @@ footer {
   }
 
   main.rules {
-    padding-top: 160px; /* plus d’espace pour mobile */
+    padding-top: 160px;
   }
 }
