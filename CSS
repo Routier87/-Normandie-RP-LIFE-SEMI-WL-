@@ -1,0 +1,55 @@
+/* ===== ENCADRE ET HOVER DES SECTIONS ===== */
+.rules section {
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 4px solid #f4c542;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.rules section:hover {
+  background: rgba(244, 197, 66, 0.05);
+  box-shadow: 0 0 15px rgba(244, 197, 66, 0.2);
+}
+
+/* H2 TITRES */
+.rules section h2 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #f4c542;
+  transition: color 0.3s ease;
+}
+
+.rules section:hover h2 {
+  color: #ffd75e;
+}
+
+/* LISTES */
+.rules section ul li {
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: all 0.3s ease;
+}
+
+.rules section ul li:hover {
+  background: rgba(244, 197, 66, 0.1);
+}
+
+/* SIGNATURE */
+.signature-box {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px dashed #f4c542;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  font-style: italic;
+  transition: all 0.3s ease;
+}
+
+.signature-box:hover {
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 12px rgba(244, 197, 66, 0.3);
+}
