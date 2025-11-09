@@ -1,165 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+/* ===== ENCADRE ET HOVER DES SECTIONS ===== */
+.rules section {
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 4px solid #f4c542;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
 }
 
-body {
-  background-color: #0e0e0e;
-  color: #fff;
-  overflow-x: hidden;
+.rules section:hover {
+  background: rgba(244, 197, 66, 0.05);
+  box-shadow: 0 0 15px rgba(244, 197, 66, 0.2);
 }
 
-/* ===== NAVBAR ===== */
-header {
-  background: rgba(0, 0, 0, 0.8);
-  padding: 15px 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  backdrop-filter: blur(10px);
-}
-
-.navbar {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-left {
-  display: flex;
-  align-items: center;
-}
-
-.nav-logo {
-  width: 45px;
-  height: 45px;
-  margin-right: 10px;
-}
-
-.logo-text {
+/* H2 TITRES */
+.rules section h2 {
   font-size: 1.3em;
-  font-weight: 700;
+  margin-bottom: 10px;
   color: #f4c542;
+  transition: color 0.3s ease;
 }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
+.rules section:hover h2 {
+  color: #ffd75e;
 }
 
-.navbar ul li {
-  margin-left: 20px;
+/* LISTES */
+.rules section ul li {
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.03);
+  transition: all 0.3s ease;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: #fff;
-  transition: 0.3s;
+.rules section ul li:hover {
+  background: rgba(244, 197, 66, 0.1);
 }
 
-.navbar a:hover,
-.navbar a.active {
-  color: #f4c542;
+/* SIGNATURE */
+.signature-box {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px dashed #f4c542;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  font-style: italic;
+  transition: all 0.3s ease;
 }
 
-/* ===== HERO ===== */
-.hero-bg {
-  background: url('banniere.png') center center/cover no-repeat;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(2px);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-  padding: 20px;
-  animation: fadeIn 2s ease-in-out;
-}
-
-.hero-content h1 {
-  font-size: 2em;
-  color: #f4c542;
-  margin-bottom: 15px;
-}
-
-.hero-content p {
-  font-size: 1.1em;
-  color: #ddd;
-  margin-bottom: 30px;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-/* ===== BUTTONS ===== */
-.btn {
-  display: inline-block;
-  background: #f4c542;
-  color: #111;
-  padding: 12px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 700;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #fff;
-  color: #000;
-}
-
-.btn-discord {
-  display: inline-block;
-  background: #5865F2;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 700;
-  transition: 0.3s;
-}
-
-.btn-discord:hover {
-  background: #4752c4;
-}
-
-/* ===== FOOTER ===== */
-footer {
-  background: #111;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 0.9em;
-  color: #aaa;
-}
-
-/* ===== ANIMATIONS ===== */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.signature-box:hover {
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 12px rgba(244, 197, 66, 0.3);
 }
